@@ -85,7 +85,7 @@ export default function Navbar() {
               Projects
             </Link>
             <Link
-              to="/about/"
+              to="about"
               className="whitespace-nowrap text-base font-medium text-third-500 hover:text-third-900 flex-initial"
             >
               About Us

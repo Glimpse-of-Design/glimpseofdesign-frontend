@@ -6,8 +6,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Contact from "./pages/contact/Contact";
 import Projects from "./pages/projects/Projects";
+import ProjectView from "./pages/projects/ProjectView";
 import UnderConstruction from "./pages/under-construction/landing_page/landing_page";
 import UserRoutes from "./routes/UserRoutes";
+import About from "./pages/home/AboutUs";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="projects/projectView" element={<ProjectView/>} />
+          <Route path="about" element={<About/>} />
         </Route>
       </Routes>
 
