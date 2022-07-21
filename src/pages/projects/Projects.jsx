@@ -10,8 +10,8 @@ import image4 from "../../assets/Categories/04.jpg";
 export default function Index() {
   return (
     <div>
-      <div className="dark:bg-gray-900 bg-primary">
-        <div className="container mx-0 py-0 bg-third">
+      <div className="dark:bg-gray-900">
+        <div className="container mx-0 py-0">
           <div className="relative mx-0 w-screen">
             <img
               src={cover_img}
@@ -117,7 +117,7 @@ export default function Index() {
               </div>
             </div>
             <div className="relative group">
-              <Link to="item/">
+              <Link to="projectView">
                 <img className="md:block w-full" src={image4} alt="Parks" />
                 <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />
                 <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">

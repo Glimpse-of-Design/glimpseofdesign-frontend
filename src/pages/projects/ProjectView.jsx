@@ -6,7 +6,7 @@ import image4 from "../../assets/Project/04.jpg";
 
 export default function Index() {
   return (
-    <div className="py-9 md:py-12 xl:py-16 px-12">
+    <div className="py-9 md:py-12 xl:py-32 px-12">
       <section>
         <h3 className="leading-5 md:leading-6 xl:leading-9 text-secondary-800 text-xl md:text-2xl xl:text-4xl font-semibold text-left uppercase text-secondary">
           Horizon campus, lake pathway
