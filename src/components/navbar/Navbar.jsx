@@ -79,7 +79,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              to="/projects/"
+              to="projects"
               className="whitespace-nowrap text-base font-medium text-third-500 hover:text-third-900 flex-initial"
             >
               Projects

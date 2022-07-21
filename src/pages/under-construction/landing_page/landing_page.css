@@ -20,11 +20,11 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-.container {
+.page-container {
   width: 100%;
   margin: 15% auto;
 }
-.grid-container {
+.page-grid-container {
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -36,17 +36,17 @@ h4 {
   font-weight: 500;
 }
 
-.grid-item {
+.page-grid-item {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   text-align: center;
 }
 
-.text {
+.page-text {
   font-size: 12px;
 }
 
-.col-4 {
+.page-col-4 {
   width: 25%;
   float: left;
 }
@@ -57,7 +57,7 @@ h1 {
   line-height: 1;
 }
 
-.Link {
+.page-Link {
   background-color: none;
   width: fit-content;
   color: rgb(116 116 116);
@@ -68,7 +68,7 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  .container {
+  .page-container {
     width: 1100px;
   }
   h1 {
