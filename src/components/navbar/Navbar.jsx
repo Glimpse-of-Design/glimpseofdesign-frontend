@@ -45,9 +45,9 @@ const solutions = [
   },
 ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(" ");
+// }
 
 export default function Navbar() {
   return (
@@ -97,7 +97,7 @@ export default function Navbar() {
               Services
             </Link>
             <Link
-              to="/contact/"
+              to="contact"
               className="whitespace-nowrap text-base font-medium text-third-500 hover:text-third-900 border-primary border-solid border-2 rounded-full px-6 py-2 flex-initial"
             >
               Contact Us

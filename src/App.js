@@ -1,22 +1,26 @@
+import { HomeIcon } from "@heroicons/react/outline";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
+// import Navbar from "./components/navbar/Navbar";
+// import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Contact from "./pages/contact/Contact";
-import Under_construction from "./pages/under-construction/landing_page/landing_page";
+import UnderConstruction from "./pages/under-construction/landing_page/landing_page";
+import UserRoutes from "./routes/UserRoutes";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Under_construction />}></Route>
-        <Route path="/home" element={<Home />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/" element={<UnderConstruction />}></Route>
+        <Route path="/home" element={<UserRoutes />}>
+          <Route index element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
       </Routes>
 
       {/* After the completeion of the website the above routes should be deleted  */}
-      
+
       {/* <Navbar />
       <Routes>
         <Route path="/home" element={<Home />}></Route>
