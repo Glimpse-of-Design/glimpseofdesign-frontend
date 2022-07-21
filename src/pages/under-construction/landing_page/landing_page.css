@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 
-body {
+.Cover {
   color: #fff;
   font-family: "Roboto Condensed", sans-serif;
   background-image: url(https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
-
-  background-position: top top;
   background-size: cover;
+  height: 1000px;
+  overflow: clip;
   margin: 0;
 }
 
@@ -28,16 +28,22 @@ body {
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  word-wrap: break-word;
-  
+  word-wrap: break-word; 
   padding: 10px;
+}
+
+h4 {
+  font-weight: 500;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
-  font-size: 12px;
   text-align: center;
+}
+
+.text {
+  font-size: 12px;
 }
 
 .col-4 {

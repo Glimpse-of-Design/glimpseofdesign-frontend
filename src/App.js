@@ -11,14 +11,18 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Under_construction />}></Route>
+        <Route path="/home" element={<Home />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
 
-      {/* <Navbar /> */}
-      {/* <Routes>
-        <Route path="/" element={<Home />}></Route>
+      {/* After the completeion of the website the above routes should be deleted  */}
+      
+      {/* <Navbar />
+      <Routes>
+        <Route path="/home" element={<Home />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
-      </Routes> */}
-      {/* <Footer /> */}
+      </Routes>
+      <Footer /> */}
     </Router>
   );
 };
