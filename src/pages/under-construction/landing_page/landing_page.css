@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+
+body {
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
+
+  background-position: top top;
+  background-size: cover;
+  margin: 0;
+}
+
+.App {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  width: 100%;
+  margin: 15% auto;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.col-4 {
+  width: 25%;
+  float: left;
+}
+
+h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 1100px;
+  }
+  h1 {
+    font-size: 58px;
+  }
+}
