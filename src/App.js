@@ -10,12 +10,17 @@ import ProjectView from "./pages/projects/ProjectView";
 import UnderConstruction from "./pages/under-construction/landing_page/landing_page";
 import About from "./pages/home/AboutUs";
 import Services from "./pages/services/Services";
+import Login from "./pages/admin/Login";
+import AddProject from "./pages/admin/AddProjectDetails";
+
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<UnderConstruction />}></Route>
+        {/* <Route path="/" element={<Login />}></Route> */}
+        {/* <Route path="/" element={<AddProject />}></Route> */}
         <Route path="/home" element={<UserRoutes />}>
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
