@@ -8,7 +8,8 @@ module.exports = {
       third: "gray", 
       title_bg: "#253544", 
       input_bg: "#E5E5E5",
-      input_txt: "#C4C4C4"
+      input_txt: "#C4C4C4",
+      error: "red"
     },
     extend: {},
   },
