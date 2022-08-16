@@ -49,7 +49,7 @@ const AddProject = () => {
                             showConfirmButton: false,
                             timer: 1500
                         })
-                        navigate("/dashboard");
+                        navigate("/projects");
                     });
                 }}
             >
@@ -92,7 +92,8 @@ const AddProject = () => {
                                             className="text-secondary text-base font-semibold leading-none text-gray-800">
                                             Project Description
                                         </label>
-                                        <textarea
+                                        <Field
+                                            type="textarea"
                                             name="description"
                                             aria-label="Please input project description"
                                             className="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-main-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none"
