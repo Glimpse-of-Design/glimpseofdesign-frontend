@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col flex-shrink-0 min-h-full">
           <div>
             <p className="font-bold text-2xl">Glimpse of Design</p>
-            <p className="font-light text-base">Interior Designers</p>
+            <p className="font-light text-base">Interior Design Studio</p>
           </div>
         </div>
         <div></div>
@@ -62,7 +62,7 @@ const Footer = () => {
           </p>
           <div className="flex flex-row gap-x-4 mt-4">
             <div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
-              <Link to="#">
+              <Link to="https://www.facebook.com/glimpseofdesign">
                 <FaFacebookF className="text-secondary text-lg" />
               </Link>
             </div>
@@ -71,16 +71,16 @@ const Footer = () => {
                 <FaWhatsapp className="text-secondary text-lg" />
               </Link>
             </div>
-            <div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
-              <Link to="#">
-                <FaInstagram className="text-secondary text-lg" />
-              </Link>
-            </div>
+//             <div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
+//               <Link to="#">
+//                 <FaInstagram className="text-secondary text-lg" />
+//               </Link>
+//             </div>
           </div>
         </div>
         <div className="border-l-2 border-r-0 pl-2 h-12 mb-8 md:mb-4 lg:0">
           <p>Address:</p>
-          <p>112/34/4, VIP Crescent, Bakmeegaha Road, Athurugiriya.</p>
+          <p>112/4/34, VIP Crescent, Bakmeegaha Road, Athurugiriya.</p>
         </div>
         <div className="border-l-2 border-r-0 pl-2 h-12 mb-8 md:mb-4 lg:0">
           <p>Telephone:</p>
