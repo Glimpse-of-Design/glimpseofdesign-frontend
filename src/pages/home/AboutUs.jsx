@@ -14,7 +14,7 @@ const About1 = () => {
       <div className="flex flex-col lg:flex-row justify-between gap-8">
         <div className="w-full lg:w-5/12 flex flex-col justify-center">
           <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">
-            What we do
+            Who we are
           </h1>
           <p className="font-normal text-base leading-6 text-gray-600 ">
             We are an interior design firm that creates unique interiors which
