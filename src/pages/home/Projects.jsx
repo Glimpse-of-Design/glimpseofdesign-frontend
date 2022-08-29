@@ -3,6 +3,7 @@ import { BsArrowRight } from "@react-icons/all-files/bs/BsArrowRight";
 import image1 from "../../assets/Categories/01.jpg";
 import image2 from "../../assets/Categories/02.jpg";
 import image3 from "../../assets/Categories/03.jpg";
+import { Link } from "react-router-dom";
 
 export default function Index() {
   return (
@@ -68,10 +69,9 @@ export default function Index() {
         </section>
         <section className="flex justify-center">
           <button className="px-6 h-11 text-gray-800 text-base font-medium flex items-center border border-gray-600 hover:bg-gray-200">
-            <span className="flex flex-row flex-nowrap items-center">
-              {" "}
+            <Link to="projects" className="flex flex-row flex-nowrap items-center">
               Explore <BsArrowRight className="ml-2" />
-            </span>
+            </Link>
           </button>
         </section>
       </div>

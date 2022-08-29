@@ -1,5 +1,6 @@
 import React from "react";
 import { BsArrowRight } from "@react-icons/all-files/bs/BsArrowRight";
+import { Link } from "react-router-dom";
 
 const About1 = () => {
   return (
@@ -31,10 +32,9 @@ const About1 = () => {
           </p>
           <section className="flex mt-8">
             <button className="px-6 h-11 text-gray-800 text-base font-medium flex items-center border border-gray-600 hover:bg-gray-200">
-              <span className="flex flex-row flex-nowrap items-center">
-                {" "}
+              <Link to="services" className="flex flex-row flex-nowrap items-center">
                 Explore <BsArrowRight className="ml-2" />
-              </span>
+              </Link>
             </button>
           </section>
         </div>
