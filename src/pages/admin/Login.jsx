@@ -5,20 +5,13 @@ import { useEffect } from "react";
 import glimpseofdesignAPI from "../../apis/glimpseofdesignAPI";
 
 function Login() {
-
-  useEffect(() => {
-    
-  }, []) 
-
-
-
-
+  useEffect(() => {}, []);
 
   const [sidebar, setsidebar] = useState();
   return (
     <div className="h-full w-full py-16 px-4">
       <div className="flex flex-col items-center justify-center">
-          <img src={logo} className="h-20 mt-16"/>
+        <img alt="Glimpse of Design" src={logo} className="h-20 mt-16" />
         <div className="bg-secondary bg-opacity-30 shadow rounded lg:w-1/3 md:w-1/2 w-full p-10 mt-12">
           <p
             tabIndex={0}

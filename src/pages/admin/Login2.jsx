@@ -8,6 +8,7 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { v4 } from "uuid";
+import logo from "../../assets/footer-logo.png";
 
 import { storage } from "../../apis/firebase/index";
 
@@ -55,11 +56,12 @@ const Login2 = () => {
         }}
       >
         {({ errors, touched }) => (
-          <Form className="h-full w-full">
-            <div className="w-full flex items-center justify-center">
-              <div className="my-24 bg-secondary bg-opacity-30 shadow rounded py-12 lg:px-28 px-8">
-                <p className="text-secondary md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">
-                  Login
+          <Form className="h-full w-full py-16 px-4">
+            <div className="flex flex-col items-center justify-center">
+              <img alt="Glimpse of Design" src={logo} className="h-20 mt-8" />
+              <div className="bg-secondary bg-opacity-30 shadow rounded lg:w-1/3 md:w-1/2 w-full p-10 mt-12">
+                <p className="text-secondary text-2xl font-extrabold leading-6 text-gray-800 mb-6">
+                  Login to your account
                 </p>
                 <div>
                   <div className="md:flex items-center mt-12">
@@ -84,9 +86,9 @@ const Login2 = () => {
                         Password
                       </label>
                       <Field
-                        type="text"
+                        type="password"
                         name="password"
-                        className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-main-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
+                        className="text-gray-900 p-3 focus:oultine-none focus:border-main-700 bg-gray-100 border-gray-200 placeholder-gray-100bg-gray-200 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
                       />
                       {touched.password && errors.password && (
                         <div className="text-error">{errors.password}</div>
@@ -94,12 +96,12 @@ const Login2 = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-center w-full">
+                  <div className="flex items-center justify-center w-full mt-8">
                     <button
                       type="submit"
-                      className="bg-primary text-secondary mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-main-700 rounded hover:bg-main-600 focus:ring-2 focus:ring-offset-2 focus:ring-main-700 focus:outline-none"
+                      className="bg-primary bg-opacity-80 hover:bg-opacity-100 text-secondary text-sm font-semibold leading-none text-white focus:ring-2 focus:ring-offset-2 focus:ring-title_bg-700 focus:outline-none border-none rounded py-4 w-full"
                     >
-                      Login
+                      Login to Account
                     </button>
                   </div>
                 </div>
