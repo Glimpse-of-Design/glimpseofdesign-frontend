@@ -84,7 +84,7 @@ export default function Index() {
                 projects.length !== 0 && projects.map((project) => (
                     (
                         <div className="relative group" key={project.projectId}>
-                          <img className="md:block w-full" src={image1} alt="Living Room"/>
+                          <img className="md:block w-full" src={project.projectImages[0]?.url || image1} alt="Living Room"/>
                           <div
                               className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"/>
                           <div

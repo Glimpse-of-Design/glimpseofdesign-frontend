@@ -1,8 +1,19 @@
 import React, { useState } from "react";
 import { BsEye } from "@react-icons/all-files/bs/BsEye";
 import logo from "../../assets/footer-logo.png";
+import { useEffect } from "react";
+import glimpseofdesignAPI from "../../apis/glimpseofdesignAPI";
 
 function Login() {
+
+  useEffect(() => {
+    
+  }, []) 
+
+
+
+
+
   const [sidebar, setsidebar] = useState();
   return (
     <div className="h-full w-full py-16 px-4">

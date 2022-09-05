@@ -5,6 +5,7 @@ import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
 import { BsArrowUp } from "@react-icons/all-files/bs/BsArrowUp";
+import { BiUserCircle } from "@react-icons/all-files/bi/BiUserCircle";
 
 const Footer = () => {
   return (
@@ -39,7 +40,16 @@ const Footer = () => {
         </div>
         <div></div>
         <div></div>
-        <div></div>
+        <div>
+          <section className="flex my-4 float-right lg:float-left">
+            <Link to="/admin" className="px-6 mt-2 h-11 text-gray-800 text-base font-medium flex items-center border border-gray-600 hover:bg-gray-200  rounded-full">
+              <span className="flex flex-row flex-nowrap items-center">
+                {" "}
+                Login as Admin <BiUserCircle className="ml-2 text-2xl" />
+              </span>
+            </Link>
+          </section>
+        </div>
 
         {/* row 3 */}
         <div>
