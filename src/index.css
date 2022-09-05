@@ -2,11 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-li{
-    margin-right: 5px;
-    margin-left: 5px;
+li {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+@layer components {
+  .nav {
+    @apply whitespace-nowrap text-base font-medium flex-initial;
+  }
+  .nav-selected {
+    @apply bg-primary rounded-full px-6 py-2;
+  }
 }

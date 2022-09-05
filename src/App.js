@@ -10,16 +10,17 @@ import ProjectView from "./pages/projects/ProjectView";
 import About from "./pages/home/AboutUs";
 import Services from "./pages/services/Services";
 import AddProject from "./pages/admin/AddProjectDetails";
+import UnderConstruction from "./pages/under-construction/landing_page/landing_page";
 
 
 const App = () => {
   return (
     <Router>
       <Routes>
-          {/*<Route path="/" element={<UnderConstruction />}/>*/}
+          <Route path="/" element={<UnderConstruction />}/>
           {/* <Route path="/" element={<Login />}/>*/}
           <Route path="/dashboard" element={<AddProject/>}/>
-          <Route path="/" element={<UserRoutes/>}>
+          <Route path="/home/" element={<UserRoutes/>}>
               <Route index element={<Home/>}/>
               <Route path="contact" element={<Contact/>}/>
               <Route path="projects" element={<Projects/>}/>

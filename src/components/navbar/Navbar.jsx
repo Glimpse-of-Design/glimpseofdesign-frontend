@@ -72,33 +72,24 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex space-x-20 items-center justify-end md:flex-1 lg:w-0 uppercase">
-            <Link
-              to="/"
-              className="whitespace-nowrap text-base font-medium text-third-500 hover:text-third-900 bg-primary rounded-full px-6 py-2 flex-initial"
-            >
+            <Link to="/home/" className="nav  text-gray-500 hover:text-gray-900 nav-selected">
               Home
             </Link>
-            <Link
-              to="projects"
-              className="whitespace-nowrap text-base font-medium text-third-500 hover:text-third-900 flex-initial"
-            >
+            <Link to="projects" className="nav  text-gray-500 hover:text-gray-900 ">
               Projects
             </Link>
-            <Link
+            {/* <Link
               to="about"
-              className="whitespace-nowrap text-base font-medium text-third-500 hover:text-third-900 flex-initial"
+              className="nav"
             >
               About Us
-            </Link>
-            <Link
-              to="services"
-              className="whitespace-nowrap text-base font-medium text-third-500 hover:text-third-900 flex-initial"
-            >
+            </Link> */}
+            <Link to="services" className="nav  text-gray-500 hover:text-gray-900 ">
               Services
             </Link>
             <Link
               to="contact"
-              className="whitespace-nowrap text-base font-medium text-third-500 hover:text-third-900 border-primary border-solid border-2 rounded-full px-6 py-2 flex-initial"
+              className="nav text-gray-500 hover:text-gray-900 border-primary border-solid border-2 rounded-full px-6 py-2"
             >
               Contact Us
             </Link>
