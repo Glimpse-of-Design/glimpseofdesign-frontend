@@ -48,7 +48,7 @@ const Login2 = () => {
                   Swal.fire({
                       position: "top-end",
                       icon: "success",
-                      title: "Your work has been saved",
+                      title: "Successfully logged in",
                       showConfirmButton: false,
                       timer: 1500,
                   });
@@ -78,7 +78,7 @@ const Login2 = () => {
                   <div className="md:flex items-center mt-12">
                     <div className="w-full flex flex-col">
                       <label className="text-secondary text-base font-semibold leading-none text-gray-800">
-                        Email
+                        Username
                       </label>
                       <Field
                         type="text"
