@@ -44,15 +44,25 @@ const Login2 = () => {
             .then((res) => {
               console.log(res.data);
 
-              Swal.fire({
-                position: "top-end",
-                icon: "success",
-                title: "Your work has been saved",
-                showConfirmButton: false,
-                timer: 1500,
-              });
-
-              navigate("/dashboard");
+              if(res.data.status === true){
+                  Swal.fire({
+                      position: "top-end",
+                      icon: "success",
+                      title: "Your work has been saved",
+                      showConfirmButton: false,
+                      timer: 1500,
+                  });
+                  navigate("/dashboard");
+              }else {
+                  Swal.fire({
+                      position: "top-end",
+                      icon: "error",
+                      title: "Your Username or password incorrect",
+                      showConfirmButton: false,
+                      timer: 1500,
+                  });
+                  navigate("/admin");
+              }
             });
         }}
       >
