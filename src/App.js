@@ -13,6 +13,7 @@ import AddProject from "./pages/admin/AddProjectDetails";
 import UnderConstruction from "./pages/under-construction/landing_page/landing_page";
 import Login from "./pages/admin/Login";
 import Login2 from "./pages/admin/Login2";
+import Dashboard from "./pages/admin/Dashboard";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/admin" element={<Login2/>}/>
           {/*<Route path="/adminl" element={<Login/>}/>*/}
           <Route path="/dashboard" element={<AddProject/>}/>
+          {/*<Route path="/dashboard" element={<Dashboard/>}/>*/}
           <Route path="/" element={<UserRoutes/>}>
               <Route index element={<Home/>}/>
               <Route path="contact" element={<Contact/>}/>
@@ -32,19 +34,6 @@ const App = () => {
               <Route path="services" element={<Services/>}/>
           </Route>
       </Routes>
-
-      {/* After the completeion of the website the above routes should be deleted  */}
-
-      {/* <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/projectView" element={<ProjectView/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/services" element={<Services />} />
-      </Routes>
-      <Footer /> */}
     </Router>
   );
 };

@@ -10,7 +10,8 @@ const contact = () => {
   return (
     <div>
       {/* section 01 with the background image and form */}
-      <div className="dark:bg-gray-900">
+      {/*//hidden until form is activated*/}
+      <div className="hidden dark:bg-gray-900">
         <div className="container mx-0 py-0">
           <div className="relative mx-0 w-screen flex flex-nowrap flex-col items-center justify-center">
             <img
@@ -61,7 +62,7 @@ const contact = () => {
       {/* section 02 with contact details */}
       <div className="flex justify-center items-center flex-col px-4 md:px-6 xl:px py-9 md:py-12 xl:py-16 text-secondary mt-28 sm:mt-0">
         <section>
-          <h1 className="leading-5 md:leading-6 xl:leading-9 text-gray-800 text-xl md:text-2xl xl:text-4xl font-semibold text-center uppercase">
+          <h1 className="leading-5 md:leading-6 xl:leading-9 text-gray-800 text-xl md:text-2xl xl:text-4xl font-semibold text-center uppercase mt-20">
             Contact us
           </h1>
           <p className="text-gray-600 text-base text-center mt-4">

@@ -5,11 +5,11 @@ import {Field, Form, Formik} from 'formik';
 import * as Yup from 'yup';
 import glimpseofdesignAPI from "../../apis/glimpseofdesignAPI";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
-import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import { v4 } from "uuid";
+import {useNavigate} from "react-router-dom";
+import {getDownloadURL, ref, uploadBytes} from "firebase/storage";
+import {v4} from "uuid";
 
-import { storage } from "../../apis/firebase/index";
+import {storage} from "../../apis/firebase/index";
 
 
 const DisplayingErrorMessagesSchema = Yup.object().shape({
@@ -69,14 +69,14 @@ const AddProject = () => {
                 }}
                 validationSchema={DisplayingErrorMessagesSchema}
                 onSubmit={values => {
-                    const obj = urls.map((url) => ({ url }));
+                    const obj = urls.map((url) => ({url}));
                     console.log(obj);
 
                     glimpseofdesignAPI.post("/project", {
                         projectName: values.projectName,
                         projectSummary: values.projectSummary,
                         description: values.description,
-                        projectImages : obj
+                        projectImages: obj
                     }).then(res => {
                         console.log(res.data);
 
@@ -95,55 +95,57 @@ const AddProject = () => {
                     <Form className="h-full w-full">
                         <div className="w-full flex items-center justify-center">
                             <div className="my-24 bg-secondary bg-opacity-30 shadow rounded py-12 lg:px-28 px-8">
-                                <p className="text-secondary md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">
+                                <p className="text-secondary mb-8 md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">
                                     Showcase your team's work!
                                 </p>
                                 <div>
-                                    <div className="md:flex items-center mt-12">
+                                    <div className="md:flex items-center mt-8">
                                         <div className="w-full flex flex-col">
                                             <label
-                                                className="text-secondary text-base font-semibold leading-none text-gray-800">
+                                                className="field-label">
                                                 Project Name
                                             </label>
                                             <Field type="text" name="projectName"
-                                                   className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-main-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"/>
+                                                   className="field-input"/>
                                             {touched.projectName && errors.projectName &&
                                                 <div className="text-error">{errors.projectName}</div>}
                                         </div>
                                     </div>
 
-                                    <div className="md:flex items-center mt-12">
+                                    <div className="md:flex items-center mt-4">
                                         <div className="w-full flex flex-col">
                                             <label
-                                                className="text-secondary text-base font-semibold leading-none text-gray-800">
+                                                className="field-label">
                                                 Project Summary
                                             </label>
                                             <Field type="text" name="projectSummary"
-                                                   className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-main-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"/>
+                                                   className="field-input"/>
                                             {touched.projectSummary && errors.projectSummary &&
                                                 <div className="text-error">{errors.projectSummary}</div>}
                                         </div>
                                     </div>
 
-                                    <div className="w-full flex flex-col mt-8">
+                                    <div className="w-full flex flex-col mt-4">
                                         <label
-                                            className="text-secondary text-base font-semibold leading-none text-gray-800">
+                                            className="field-label">
                                             Project Description
                                         </label>
                                         <Field
                                             type="textarea"
                                             name="description"
                                             aria-label="Please input project description"
-                                            className="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-main-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none"
+                                            className="h-36 field-input resize-none"
                                             placeholder="Minimum 50 words"
                                         />
                                     </div>
 
-                                    <div>
-                                        <label className="block text-sm font-medium text-gray-700">
+                                    <div className="w-full flex flex-col mt-4">
+                                        <label className="field-label">
+                                            {/*block text-sm font-medium text-gray-700*/}
                                             Photos of Location
                                         </label>
-                                        <div className="mt-1 flex justify-center rounded-md border-2 border-dashed border-gray-300 px-6 pt-5 pb-6">
+                                        <div
+                                            className="mt-4 flex justify-center rounded-md bg-secondary bg-opacity-80 border-2 border-dashed border-gray-300 px-6 pt-5 pb-6">
                                             <div className="space-y-1 text-center">
                                                 {!urls && (
                                                     <svg
@@ -208,7 +210,7 @@ const AddProject = () => {
                                     <div className="flex items-center justify-center w-full">
                                         <button
                                             type="submit"
-                                            className="bg-primary text-secondary mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-main-700 rounded hover:bg-main-600 focus:ring-2 focus:ring-offset-2 focus:ring-main-700 focus:outline-none">
+                                            className="bg-primary bg-opacity-80 hover:bg-opacity-100 text-secondary mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-main-700 rounded hover:bg-main-600 focus:ring-2 focus:ring-offset-2 focus:ring-main-700 focus:outline-none">
                                             SUBMIT
                                         </button>
                                     </div>

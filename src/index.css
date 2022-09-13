@@ -3,19 +3,39 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
+    background-color: black;
 }
 
 li {
-  margin-right: 5px;
-  margin-left: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+@layer utilities {
+    .nav-bar {
+        @apply rounded-full px-6 py-2 whitespace-nowrap;
+    }
+
+    .nav-bar.active {
+        @apply bg-primary;
+    }
+
+    .field-label {
+        @apply text-secondary text-base font-semibold leading-none;
+    }
+
+    .field-input {
+        @apply text-base leading-none text-third p-3 mt-4 bg-secondary bg-opacity-80 border rounded border-third placeholder-third cursor-text;
+        /*text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-main-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100*/
+    }
 }
 
 @layer components {
-  .nav {
-    @apply whitespace-nowrap text-base font-medium flex-initial;
-  }
-  .nav-selected {
-    @apply bg-primary rounded-full px-6 py-2;
-  }
+    .nav {
+        @apply whitespace-nowrap text-base font-medium flex-initial;
+    }
+
+    .nav-selected {
+        @apply bg-primary rounded-full px-6 py-2;
+    }
 }
