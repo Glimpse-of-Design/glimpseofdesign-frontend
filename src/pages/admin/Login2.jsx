@@ -17,7 +17,7 @@ const DisplayingErrorMessagesSchema = Yup.object().shape({
     .min(2, "Too Short!")
     .max(50, "Too Long!")
     .required("Required"),
-  ppassword: Yup.string()
+  password: Yup.string()
     .min(2, "Too Short!")
     .max(50, "Too Long!")
     .required("Required"),
@@ -37,7 +37,7 @@ const Login2 = () => {
         validationSchema={DisplayingErrorMessagesSchema}
         onSubmit={(values) => {
           glimpseofdesignAPI
-            .post("/user", {
+            .post("/user/auth/login", {
               email: values.email,
               password: values.password,
             })
@@ -51,6 +51,7 @@ const Login2 = () => {
                 showConfirmButton: false,
                 timer: 1500,
               });
+
               navigate("/dashboard");
             });
         }}

@@ -14,17 +14,16 @@ import UnderConstruction from "./pages/under-construction/landing_page/landing_p
 import Login from "./pages/admin/Login";
 import Login2 from "./pages/admin/Login2";
 
-
 const App = () => {
   return (
     <Router>
       <Routes>
-          <Route path="/" element={<UnderConstruction />}/>
+          {/*<Route path="/" element={<UnderConstruction />}/>*/}
           {/* <Route path="/" element={<Login />}/>*/}
           <Route path="/admin" element={<Login2/>}/>
-          <Route path="/adminl" element={<Login/>}/>
+          {/*<Route path="/adminl" element={<Login/>}/>*/}
           <Route path="/dashboard" element={<AddProject/>}/>
-          <Route path="/home/" element={<UserRoutes/>}>
+          <Route path="/" element={<UserRoutes/>}>
               <Route index element={<Home/>}/>
               <Route path="contact" element={<Contact/>}/>
               <Route path="projects" element={<Projects/>}/>
