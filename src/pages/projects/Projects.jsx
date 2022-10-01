@@ -85,7 +85,7 @@ export default function Index() {
                     (
                         <div className="relative group" key={project.projectId}>
                           {/* Project image dimensions set to height: 250px; width: 400px; */}
-                          <img className="md:block w-[400px] h-[250px]" src={project.projectImages[0]?.url || image1} alt="Living Room"/>
+                          <img className="w-[400px] h-[250px]" src={project.projectImages[0]?.url || image1} alt="Living Room"/>
                           <div
                               className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"/>
                           <div
