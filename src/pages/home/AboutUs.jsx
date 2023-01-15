@@ -27,13 +27,13 @@ const About1 = () => {
             aliqua dolor do amet sint. Velit officia consequat duis enim velit
             mollit. Exercitation veniam consequat sunt nostrud amet.
           </p> */}
-          <section className="flex mt-8">
+          {/* <section className="flex mt-8">
             <button className="px-6 h-11 text-gray-800 text-base font-medium flex items-center border border-gray-600 hover:bg-gray-200">
               <Link to="about" className="flex flex-row flex-nowrap items-center">
                 Explore <BsArrowRight className="ml-2" />
               </Link>
             </button>
-          </section>
+          </section> */}
         </div>
         <div className="w-full lg:w-8/12 ">
           <img

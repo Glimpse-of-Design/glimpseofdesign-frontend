@@ -29,14 +29,14 @@ export default function Index() {
             <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />
             <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
               <p className="font-semibold text-2xl leading-6 text-secondary uppercase">
-                HOUSE OF GLAMOR
+                HOUSE OF GLAMOUR
               </p>
             </div>
-            <div className="flex flex-col bottom-32 left-8 mr-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
+            <div className="flex flex-col top-20 left-8 mr-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
               <p className="font-normal text-xl leading-6 text-secondary">
                 House interior in Athurugiriya
               </p>
-              <p className="hidden md:block font-light text-sm lg:text-xl leading-6 text-secondary">
+              <p className="font-light text-sm lg:text-xl leading-6 text-secondary">
                 Modern but elegant home that brings the luxurious atmosphere was
                 the clients main desire in their newly built home. The overall
                 colour pallete ws more specific than the typical colours used in
@@ -52,7 +52,7 @@ export default function Index() {
                 VARNA LIMITED
               </p>
             </div>
-            <div className="flex flex-col bottom-10 left-8 mr-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
+            <div className="flex flex-col top-20 left-8 mr-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
               <p className="font-normal text-xl leading-6 text-secondary">
                 Office interior at Ratmalana
               </p>
@@ -74,7 +74,7 @@ export default function Index() {
                 TIMELESS HOME
               </p>
             </div>
-            <div className="flex flex-col bottom-16 left-8 mr-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
+            <div className="flex flex-col top-20 left-8 mr-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
               <p className="font-normal text-xl leading-6 text-secondary">
                 House in Thalawathugoda
               </p>

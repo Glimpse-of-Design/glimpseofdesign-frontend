@@ -61,15 +61,15 @@ export default function Index() {
                   />
                   <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
                     <p className="font-semibold text-2xl leading-6 text-secondary">
-                      KWA Living Room
+                      Designing
                     </p>
                   </div>
-                  <div className="flex flex-col top-20 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                  {/* <div className="flex flex-col top-20 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
                     <p className="font-light text-xl leading-6 text-secondary">
                       This is not a true content. A text used to describe the
                       picture.
                     </p>
-                  </div>
+                  </div> */}
                   <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
                 </div>
                 <div className="flex flex-col space-y-4 md:space-y-8 mt-4 md:mt-0">
@@ -81,15 +81,15 @@ export default function Index() {
                     />
                     <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
                       <p className="font-semibold text-2xl leading-6 text-secondary">
-                        Appartments
+                        3D Visualizing
                       </p>
                     </div>
-                    <div className="flex flex-col top-20 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    {/* <div className="flex flex-col top-20 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
                       <p className="font-light text-xl leading-6 text-secondary">
                         This is not a true content. A text used to describe the
                         picture.
                       </p>
-                    </div>
+                    </div> */}
                     <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
                   </div>
                   <div className="relative group flex justify-center items-center h-full w-full">
@@ -100,36 +100,57 @@ export default function Index() {
                     />
                     <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
                       <p className="font-semibold text-2xl leading-6 text-secondary">
-                        Office Interior
+                        Moodboards
                       </p>
                     </div>
-                    <div className="flex flex-col top-20 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    {/* <div className="flex flex-col top-20 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
                       <p className="font-light text-xl leading-6 text-secondary">
                         This is not a true content. A text used to describe the
                         picture.
                       </p>
-                    </div>
+                    </div> */}
                     <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
                   </div>
                 </div>
-                <div className="relative group justify-center items-center h-full w-full hidden lg:flex">
-                  <img
-                    className="object-center object-cover h-full w-full"
-                    src={image4}
-                    alt="park"
-                  />
-                  <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
-                    <p className="font-semibold text-2xl leading-6 text-secondary">
-                      Parks
-                    </p>
+                <div className="flex flex-col space-y-4 md:space-y-8 mt-4 md:mt-0">
+                  <div className="relative group flex justify-center items-center h-full w-full">
+                    <img
+                      className="object-center object-cover h-full w-full"
+                      src={image2}
+                      alt="appartment"
+                    />
+                    <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
+                      <p className="font-semibold text-2xl leading-6 text-secondary">
+                        Fabricator Guiding
+                      </p>
+                    </div>
+                    {/* <div className="flex flex-col top-20 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                      <p className="font-light text-xl leading-6 text-secondary">
+                        This is not a true content. A text used to describe the
+                        picture.
+                      </p>
+                    </div> */}
+                    <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
                   </div>
-                  <div className="flex flex-col top-20 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
-                    <p className="font-light text-xl leading-6 text-secondary">
-                      This is not a true content. A text used to describe the
-                      picture.
-                    </p>
+                  <div className="relative group flex justify-center items-center h-full w-full">
+                    <img
+                      className="object-center object-cover h-full w-full"
+                      src={image3}
+                      alt="Office Interior"
+                    />
+                    <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
+                      <p className="font-semibold text-2xl leading-6 text-secondary">
+                        Accessorizing
+                      </p>
+                    </div>
+                    {/* <div className="flex flex-col top-20 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                      <p className="font-light text-xl leading-6 text-secondary">
+                        This is not a true content. A text used to describe the
+                        picture.
+                      </p>
+                    </div> */}
+                    <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
                   </div>
-                  <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
                 </div>
                 <div className="relative group flex justify-center items-center h-full w-full mt-4 md:hidden md:mt-8 lg:hidden">
                   <img

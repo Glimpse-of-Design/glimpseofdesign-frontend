@@ -6,7 +6,7 @@ module.exports = {
       primary: "#D9A527",
       secondary: "#ffffff",
       third: "gray", 
-      title_bg: "#253544", 
+      title_bg: "#363636", 
       input_bg: "#E5E5E5",
       input_txt: "#C4C4C4",
       error: "red"

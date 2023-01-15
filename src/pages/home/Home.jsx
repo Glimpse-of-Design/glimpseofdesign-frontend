@@ -10,8 +10,8 @@ const Home = () => {
     <div>
       <Carousel />
       <Projects />
-      <AboutUs />
       <Services />
+      <AboutUs />
     </div>
   );
 };
