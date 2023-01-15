@@ -1,21 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-// import {
-//   CarouselProvider,
-//   Slider,
-//   Slide,
-//   ButtonBack,
-//   ButtonNext,
-// } from "pure-react-carousel";
-// import "pure-react-carousel/dist/react-carousel.es.css";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import Logo from "../../assets/footer-logo.png";
-import { BiGridAlt } from "@react-icons/all-files/bi/BiGridAlt";
-import { BiAddToQueue } from "@react-icons/all-files/bi/BiAddToQueue";
-import { BiLogOut } from "@react-icons/all-files/bi/BiLogOut";
-import { BiSearch } from "@react-icons/all-files/bi/BiSearch";
-import { BiSliderAlt } from "@react-icons/all-files/bi/BiSliderAlt";
+import {BiGridAlt} from "@react-icons/all-files/bi/BiGridAlt";
+import {BiAddToQueue} from "@react-icons/all-files/bi/BiAddToQueue";
+import {BiLogOut} from "@react-icons/all-files/bi/BiLogOut";
+import {BiSearch} from "@react-icons/all-files/bi/BiSearch";
+import {BiSliderAlt} from "@react-icons/all-files/bi/BiSliderAlt";
 import image1 from "../../assets/Project/01.jpg";
 import image2 from "../../assets/Project/02.jpg";
 import image3 from "../../assets/Project/03.jpg";
@@ -440,7 +432,7 @@ function Index() {
                   </div>
                 </div>
               </div>
-              
+
             </div>
           </div>
         </div>

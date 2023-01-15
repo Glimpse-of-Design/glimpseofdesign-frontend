@@ -1,19 +1,16 @@
 // This page is hidden to all users except for the website owner. Owner can add projects using this view.
-
-import React, { useState } from "react";
-import { Field, Form, Formik } from "formik";
+import React, {useState} from "react";
+import {Field, Form, Formik} from "formik";
 import * as Yup from "yup";
-import glimpseofdesignAPI from "../../apis/glimpseofdesignAPI";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
-import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import { v4 } from "uuid";
+import {useNavigate} from "react-router-dom";
 import logo from "../../assets/footer-logo.png";
+import {auth} from '../../apis/firebase/firebase-config';
 
-import { storage } from "../../apis/firebase/index";
+import {onAuthStateChanged, signInWithEmailAndPassword} from 'firebase/auth';
 
 const DisplayingErrorMessagesSchema = Yup.object().shape({
-  email: Yup.string()
+    email: Yup.string()
     .min(2, "Too Short!")
     .max(50, "Too Long!")
     .required("Required"),
@@ -24,47 +21,51 @@ const DisplayingErrorMessagesSchema = Yup.object().shape({
 });
 
 const Login2 = () => {
-  const navigate = useNavigate();
+    const [user, setUser] = useState({});
+    const navigate = useNavigate();
 
-  return (
-    <div>
-      <h1>Displaying Error Messages</h1>
-      <Formik
-        initialValues={{
-          email: "",
-          password: "",
-        }}
-        validationSchema={DisplayingErrorMessagesSchema}
-        onSubmit={(values) => {
-          glimpseofdesignAPI
-            .post("/user/auth/login", {
-              email: values.email,
-              password: values.password,
-            })
-            .then((res) => {
-              console.log(res.data);
+    onAuthStateChanged(auth, (currentUser) => {
+        setUser(currentUser);
+    });
 
-              if(res.data.status === true){
-                  Swal.fire({
-                      position: "top-end",
-                      icon: "success",
-                      title: "Successfully logged in",
-                      showConfirmButton: false,
-                      timer: 1500,
-                  });
-                  navigate("/dashboard");
-              }else {
-                  Swal.fire({
-                      position: "top-end",
-                      icon: "error",
-                      title: "Your Username or password incorrect",
-                      showConfirmButton: false,
-                      timer: 1500,
-                  });
-                  navigate("/admin");
-              }
-            });
-        }}
+    return (
+        <div>
+            <h1>Displaying Error Messages</h1>
+            <Formik
+                initialValues={{
+                    email: "",
+                    password: "",
+                }}
+                validationSchema={DisplayingErrorMessagesSchema}
+                onSubmit={(values) => {
+                    const login = async () => {
+                        try {
+                            const user = await signInWithEmailAndPassword(
+                                auth,
+                                values.email,
+                                values.password
+                            );
+                            Swal.fire({
+                                position: "top-end",
+                                icon: "success",
+                                title: "Successfully logged in",
+                                showConfirmButton: false,
+                                timer: 1500,
+                            });
+                            navigate("/dashboard");
+                        } catch (e) {
+                            Swal.fire({
+                                position: "top-end",
+                                icon: "error",
+                                title: "Your Username or password incorrect",
+                                showConfirmButton: false,
+                                timer: 1500,
+                            });
+                            navigate("/login");
+                        }
+                    }
+                    login();
+                }}
       >
         {({ errors, touched }) => (
           <Form className="h-full w-full py-16 px-4">

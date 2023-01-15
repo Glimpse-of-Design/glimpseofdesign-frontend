@@ -1,16 +1,15 @@
 // This page is hidden to all users except for the website owner. Owner can add projects using this view.
-
 import React, {useState} from 'react';
 import {Field, Form, Formik} from 'formik';
 import * as Yup from 'yup';
-import glimpseofdesignAPI from "../../apis/glimpseofdesignAPI";
 import Swal from "sweetalert2";
 import {useNavigate} from "react-router-dom";
 import {getDownloadURL, ref, uploadBytes} from "firebase/storage";
 import {v4} from "uuid";
+import {db, storage} from "../../apis/firebase/firebase-config";
+import {addDoc, collection} from "firebase/firestore";
 
-import {storage} from "../../apis/firebase/index";
-
+const projectsCollectionRef = collection(db, "projects");
 
 const DisplayingErrorMessagesSchema = Yup.object().shape({
     projectName: Yup.string()
@@ -65,30 +64,32 @@ const AddProject = () => {
                     projectName: '',
                     projectSummary: '',
                     description: '',
-                    projectImages: []
+                    images: []
                 }}
                 validationSchema={DisplayingErrorMessagesSchema}
                 onSubmit={values => {
                     const obj = urls.map((url) => ({url}));
                     console.log(obj);
 
-                    glimpseofdesignAPI.post("/project", {
-                        projectName: values.projectName,
-                        projectSummary: values.projectSummary,
-                        description: values.description,
-                        projectImages: obj
-                    }).then(res => {
-                        console.log(res.data);
-
-                        Swal.fire({
-                            position: 'top-end',
-                            icon: 'success',
-                            title: 'Your work has been saved',
-                            showConfirmButton: false,
-                            timer: 1500
-                        })
+                    try {
+                        const createProject = async () => {
+                            await addDoc(projectsCollectionRef, {
+                                projectName: values.projectName,
+                                projectSummary: values.projectSummary,
+                                description: values.description,
+                                images: obj
+                            });
+                        }
+                        createProject();
                         navigate("/projects");
-                    });
+                    } catch (e) {
+                        Swal.fire({
+                            icon: "error",
+                            title: "Oops...",
+                            text: "Something went wrong!",
+                            footer: '<a href="">Why do I have this issue?</a>',
+                        });
+                    }
                 }}
             >
                 {({errors, touched}) => (

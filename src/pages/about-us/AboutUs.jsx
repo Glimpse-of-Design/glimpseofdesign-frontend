@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import cover_img from "../../assets/Categories/03.jpg";
 
-export default function Index() {
+export default function AboutUs() {
   return (
-    <div>
-      <div className="dark:bg-gray-900">
-        <div className="container mx-0 py-0">
-          <div className="relative mx-0 w-screen">
-            <img
-              src={cover_img}
-              alt="A work table with house plants"
-              className="w-full h-full hidden lg:block"
-            />
+      <div>
+        <div className="dark:bg-gray-900">
+          <div className="container mx-0 py-0">
+            <div className="relative mx-0 w-screen">
+              <img
+                  src={cover_img}
+                  alt="A work table with house plants"
+                  className="w-full h-full hidden lg:block"
+              />
             <img
               src={cover_img}
               alt="A work table with house plants"

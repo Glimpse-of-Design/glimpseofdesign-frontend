@@ -1,13 +1,13 @@
 import {Fragment} from "react";
 import {Popover, Transition} from "@headlessui/react";
 import {
-  ChartBarIcon,
-  CursorClickIcon,
-  MenuIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  ViewGridIcon,
-  XIcon,
+    ChartBarIcon,
+    CursorClickIcon,
+    MenuIcon,
+    RefreshIcon,
+    ShieldCheckIcon,
+    ViewGridIcon,
+    XIcon,
 } from "@heroicons/react/outline";
 import {Link, NavLink} from "react-router-dom";
 import Logo from "../../assets/nav-logo.png";
