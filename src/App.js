@@ -1,7 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-// import Navbar from "./components/navbar/Navbar";
-// import Footer from "./components/footer/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import UserRoutes from "./routes/UserRoutes";
 import Home from "./pages/home/Home";
 import Contact from "./pages/contact/Contact";
@@ -19,20 +17,20 @@ const App = () => {
   return (
     <Router>
       <Routes>
-          <Route path="/" element={<UnderConstruction />}/>
-          {/* <Route path="/" element={<Login />}/>*/}
-          {/* <Route path="/admin" element={<Login2/>}/> */}
-          {/*<Route path="/adminl" element={<Login/>}/>*/}
-          {/* <Route path="/dashboard" element={<AddProject/>}/> */}
-          {/*<Route path="/dashboard" element={<Dashboard/>}/>*/}
-          {/* <Route path="/" element={<UserRoutes/>}>
-              <Route index element={<Home/>}/>
-              <Route path="contact" element={<Contact/>}/>
-              <Route path="projects" element={<Projects/>}/>
-              <Route path="projects/projectView" element={<ProjectView/>}/>
-              <Route path="about" element={<About/>}/>
-              <Route path="services" element={<Services/>}/>
-          </Route> */}
+        {/* <Route path="/" element={<UnderConstruction />}/> */}
+        <Route path="/" element={<Login />} />
+        <Route path="/admin" element={<Login2 />} />
+        <Route path="/adminl" element={<Login />} />
+        <Route path="/dashboard" element={<AddProject />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<UserRoutes />}>
+          <Route index element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="projects/projectView" element={<ProjectView />} />
+          <Route path="about" element={<About />} />
+          <Route path="services" element={<Services />} />
+        </Route>
       </Routes>
     </Router>
   );
