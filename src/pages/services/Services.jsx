@@ -4,13 +4,14 @@ import image1 from "../../assets/Categories/01.jpg";
 import image2 from "../../assets/Categories/02.jpg";
 import image3 from "../../assets/Categories/03.jpg";
 import image4 from "../../assets/Categories/04.jpg";
+import image5 from "../../assets/Categories/05.jpg";
 
 export default function Index() {
   return (
     <div>
       <div className="dark:bg-gray-900">
         <div className="container mx-0 py-0">
-          <div className="relative mx-0 w-screen">
+          <div className="relative mx-0 w-full">
             <img
               src={cover_img}
               alt="A work table with house plants"
@@ -27,7 +28,7 @@ export default function Index() {
               className="sm:hidden w-full h-full"
             />
 
-            <div className="absolute z-10 top-8 sm:top-20 lg:top-32 left-0 mx-0 sm:mx-0 mt-20 sm:mt-12 sm:py-4 py-4 px-4 md:py-8 lg:py-8 xl:py-8 sm:pl-14 flex flex-col sm:justify-start items-start bg-title_bg  opacity-75 text-secondary">
+            <div className="h-32 w-96 absolute z-10 top-8 sm:top-20 lg:top-32 left-0 mx-0 sm:mx-0 mt-20 sm:mt-12 sm:py-4 py-4 px-4 md:py-8 lg:py-8 xl:py-8 sm:pl-14 flex flex-col sm:justify-start items-start bg-title_bg  opacity-75 text-secondary">
               <h1 className="text-base sm:text-base lg:text-3xl font-semibold text-gray-800 sm:w-9/12 uppercase underline underline-offset-4">
                 Our services
               </h1>
@@ -42,10 +43,10 @@ export default function Index() {
 
       <div className="py-9 md:py-12 xl:py-16">
         <section>
-          <h1 className="leading-5 md:leading-6 xl:leading-9 text-secondary-800 text-xl md:text-2xl xl:text-4xl font-semibold text-center uppercase text-secondary">
+          <h1 className="leading-5 md:leading-6 xl:leading-9 text-secondary-800 text-xl md:text-2xl xl:text-4xl font-semibold text-center uppercase text-onSurface">
             What we do
           </h1>
-          <p className="text-secondary-600 text-base text-center mt-4 text-secondary">
+          <p className="text-secondary-600 text-base text-center mt-4 text-onSurface">
             We deliver your desire. Trusted for many years.
           </p>
         </section>
@@ -59,7 +60,7 @@ export default function Index() {
                     src={image1}
                     alt="living Room"
                   />
-                  <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
+                  <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-gray_text group-hover:bg-opacity-50">
                     <p className="font-semibold text-2xl leading-6 text-secondary">
                       Designing
                     </p>
@@ -70,7 +71,7 @@ export default function Index() {
                       picture.
                     </p>
                   </div> */}
-                  <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
+                  <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-onSurface bg-opacity-50" />
                 </div>
                 <div className="flex flex-col space-y-4 md:space-y-8 mt-4 md:mt-0">
                   <div className="relative group flex justify-center items-center h-full w-full">
@@ -79,7 +80,7 @@ export default function Index() {
                       src={image2}
                       alt="appartment"
                     />
-                    <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
+                    <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-gray_text group-hover:bg-opacity-50">
                       <p className="font-semibold text-2xl leading-6 text-secondary">
                         3D Visualizing
                       </p>
@@ -90,7 +91,7 @@ export default function Index() {
                         picture.
                       </p>
                     </div> */}
-                    <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
+                    <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-onSurface bg-opacity-50" />
                   </div>
                   <div className="relative group flex justify-center items-center h-full w-full">
                     <img
@@ -98,7 +99,7 @@ export default function Index() {
                       src={image3}
                       alt="Office Interior"
                     />
-                    <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
+                    <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-gray_text group-hover:bg-opacity-50">
                       <p className="font-semibold text-2xl leading-6 text-secondary">
                         Moodboards
                       </p>
@@ -109,17 +110,17 @@ export default function Index() {
                         picture.
                       </p>
                     </div> */}
-                    <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
+                    <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-onSurface bg-opacity-50" />
                   </div>
                 </div>
                 <div className="flex flex-col space-y-4 md:space-y-8 mt-4 md:mt-0">
                   <div className="relative group flex justify-center items-center h-full w-full">
                     <img
                       className="object-center object-cover h-full w-full"
-                      src={image2}
+                      src={image4}
                       alt="appartment"
                     />
-                    <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
+                    <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-gray_text group-hover:bg-opacity-50">
                       <p className="font-semibold text-2xl leading-6 text-secondary">
                         Fabricator Guiding
                       </p>
@@ -130,15 +131,15 @@ export default function Index() {
                         picture.
                       </p>
                     </div> */}
-                    <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
+                    <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-onSurface bg-opacity-50" />
                   </div>
                   <div className="relative group flex justify-center items-center h-full w-full">
                     <img
                       className="object-center object-cover h-full w-full"
-                      src={image3}
+                      src={image5}
                       alt="Office Interior"
                     />
-                    <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
+                    <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-gray_text group-hover:bg-opacity-50">
                       <p className="font-semibold text-2xl leading-6 text-secondary">
                         Accessorizing
                       </p>
@@ -149,7 +150,7 @@ export default function Index() {
                         picture.
                       </p>
                     </div> */}
-                    <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
+                    <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-onSurface bg-opacity-50" />
                   </div>
                 </div>
                 <div className="relative group flex justify-center items-center h-full w-full mt-4 md:hidden md:mt-8 lg:hidden">
@@ -163,7 +164,7 @@ export default function Index() {
                     src={image4}
                     alt="olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2"
                   />
-                  <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
+                  <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-gray_text group-hover:bg-opacity-50">
                     <p className="font-semibold text-2xl leading-6 text-secondary">
                       Parks
                     </p>
@@ -174,7 +175,7 @@ export default function Index() {
                       picture.
                     </p>
                   </div>
-                  <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
+                  <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-onSurface bg-opacity-50" />
                 </div>
               </div>
               <div className="relative group hidden md:flex justify-center items-center h-full w-full mt-4 md:mt-8 lg:hidden">
@@ -188,7 +189,7 @@ export default function Index() {
                   src={image4}
                   alt="olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2"
                 />
-                <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
+                <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-gray_text group-hover:bg-opacity-50">
                   <p className="font-semibold text-2xl leading-6 text-secondary">
                     Parks
                   </p>
@@ -199,7 +200,7 @@ export default function Index() {
                     picture.
                   </p>
                 </div>
-                <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
+                <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-onSurface bg-opacity-50" />
               </div>
             </div>
           </div>

@@ -22,7 +22,7 @@ export default function Projects() {
     <div>
       <div className="dark:bg-gray-900">
         <div className="container mx-0 py-0">
-          <div className="relative mx-0 w-screen">
+          <div className="relative mx-0 w-full">
             <img
               src={cover_img}
               alt="A work table with house plants"
@@ -39,7 +39,7 @@ export default function Projects() {
               className="sm:hidden w-full h-full"
             />
 
-            <div className="absolute z-10 top-8 sm:top-20 lg:top-32 left-0 mx-0 sm:mx-0 mt-20 sm:mt-12 sm:py-4 py-4 px-4 md:py-8 lg:py-8 xl:py-8 sm:pl-14 flex flex-col sm:justify-start items-start bg-title_bg  opacity-75 text-secondary">
+            <div className="absolute z-10 top-8 sm:top-20 lg:top-32 left-0 mx-0 sm:mx-0 mt-20 sm:mt-12 sm:py-4 py-4 px-4 md:py-8 lg:py-8 xl:py-8 sm:pl-14 flex flex-col sm:justify-start items-start bg-title_bg opacity-75 text-secondary w-96">
               <h1 className="text-base sm:text-base lg:text-3xl font-semibold text-gray-800 sm:w-9/12 uppercase underline underline-offset-4">
                 Portfolio
               </h1>
@@ -51,19 +51,19 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className="py-9 md:py-12 xl:py-16">
+      <div className="py-9 md:py-12 xl:py-16 text-onSurface">
         <section>
-          <h1 className="leading-5 md:leading-6 xl:leading-9 text-secondary-800 text-xl md:text-2xl xl:text-4xl font-semibold text-center uppercase text-secondary">
+          <h1 className="leading-5 md:leading-6 xl:leading-9 text-secondary-800 text-xl md:text-2xl xl:text-4xl font-semibold text-center uppercase text-onSurface">
             Projects
           </h1>
-          <p className="text-secondary-600 text-base text-center mt-4 text-secondary">
+          <p className="text-secondary-600 text-base text-center mt-4 text-onSurface">
             We deliver your desire. Trusted for many years.
           </p>
         </section>
         <div className="2xl:container flex justify-center items-center w-full 2xl:mx-auto lg:px-20 md:py-12 md:px-6 py-9 px-4">
           <div className="w-80 md:w-auto grid lg:grid-cols-3 grid-cols-1 lg:gap-8 gap-6">
             <div className="col-span-3">
-              <div className="text-secondary font-light pt-4">
+              <div className="text-onSurface font-regular pt-4">
                 <span>
                   <a className="cursor-pointer">All</a> |{" "}
                   <a className="cursor-pointer">Residential Interior</a> |{" "}
@@ -85,7 +85,7 @@ export default function Projects() {
                     alt="Living Room"
                   />
                   <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />
-                  <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
+                  <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-surface group-hover:bg-opacity-50">
                     <p className="font-semibold text-2xl leading-6 text-secondary">
                       {project.projectName}
                     </p>
@@ -101,7 +101,7 @@ export default function Projects() {
             {/*<div className="relative group">*/}
             {/*  <img className="md:block w-full" src={image2} alt="Apartments" />*/}
             {/*  <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />*/}
-            {/*  <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">*/}
+            {/*  <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-surface group-hover:bg-opacity-50">*/}
             {/*    <p className="font-semibold text-2xl leading-6 text-secondary">*/}
             {/*      JK Appartments - Peliyagoda*/}
             {/*    </p>*/}
@@ -116,7 +116,7 @@ export default function Projects() {
             {/*<div className="relative group">*/}
             {/*  <img className="md:block w-full" src={image3} alt="Office" />*/}
             {/*  <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />*/}
-            {/*  <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">*/}
+            {/*  <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-surface group-hover:bg-opacity-50">*/}
             {/*    <p className="font-semibold text-2xl leading-6 text-secondary">*/}
             {/*      Dialog Axiata Office Interior*/}
             {/*    </p>*/}
@@ -132,7 +132,7 @@ export default function Projects() {
             {/*  <Link to="projectView">*/}
             {/*    <img className="md:block w-full" src={image4} alt="Parks" />*/}
             {/*    <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />*/}
-            {/*    <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">*/}
+            {/*    <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-surface group-hover:bg-opacity-50">*/}
             {/*      <p className="font-semibold text-2xl leading-6 text-secondary">*/}
             {/*        Bellanwila Park*/}
             {/*      </p>*/}

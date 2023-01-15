@@ -30,7 +30,7 @@ const Login2 = () => {
 
     return (
         <div>
-            <h1>Displaying Error Messages</h1>
+            <h1 className="hidden">Displaying Error Messages</h1>
             <Formik
                 initialValues={{
                     email: "",
@@ -68,11 +68,11 @@ const Login2 = () => {
                 }}
       >
         {({ errors, touched }) => (
-          <Form className="h-full w-full py-16 px-4">
+          <Form className="h-full w-full py-16 px-4 bg-onSurface">
             <div className="flex flex-col items-center justify-center">
               <img alt="Glimpse of Design" src={logo} className="h-20 mt-8" />
-              <div className="bg-secondary bg-opacity-30 shadow rounded lg:w-1/3 md:w-1/2 w-full p-10 mt-12">
-                <p className="text-secondary text-2xl font-extrabold leading-6 text-gray-800 mb-6">
+              <div className="bg-tertiary bg-opacity-60 shadow rounded lg:w-1/3 md:w-1/2 w-full p-10 mt-12">
+                <p className="text-onSurface text-2xl font-extrabold leading-6 text-gray-800 mb-6">
                   Login to your account
                 </p>
                 <div>
@@ -84,7 +84,7 @@ const Login2 = () => {
                       <Field
                         type="text"
                         name="email"
-                        className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-main-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
+                        className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-surface-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
                       />
                       {touched.email && errors.email && (
                         <div className="text-error">{errors.email}</div>
@@ -100,7 +100,7 @@ const Login2 = () => {
                       <Field
                         type="password"
                         name="password"
-                        className="text-gray-900 p-3 focus:oultine-none focus:border-main-700 bg-gray-100 border-gray-200 placeholder-gray-100bg-gray-200 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
+                        className="text-gray-900 p-3 focus:oultine-none focus:border-surface-700 bg-gray-100 border-gray-200 placeholder-gray-100bg-gray-200 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
                       />
                       {touched.password && errors.password && (
                         <div className="text-error">{errors.password}</div>
@@ -111,7 +111,7 @@ const Login2 = () => {
                   <div className="flex items-center justify-center w-full mt-8">
                     <button
                       type="submit"
-                      className="bg-primary bg-opacity-80 hover:bg-opacity-100 text-secondary text-sm font-semibold leading-none text-white focus:ring-2 focus:ring-offset-2 focus:ring-title_bg-700 focus:outline-none border-none rounded py-4 w-full"
+                      className="bg-primary bg-opacity-80 hover:bg-opacity-100 text-secondary text-sm font-semibold leading-none text-onSurface focus:ring-2 focus:ring-offset-2 focus:ring-title_bg-700 focus:outline-none border-none rounded py-4 w-full"
                     >
                       Login to Account
                     </button>

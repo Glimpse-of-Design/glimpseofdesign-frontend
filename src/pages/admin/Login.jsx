@@ -12,7 +12,7 @@ function Login() {
         <div className="h-full w-full py-16 px-4">
             <div className="flex flex-col items-center justify-center">
                 <img alt="Glimpse of Design" src={logo} className="h-20 mt-16"/>
-                <div className="bg-secondary bg-opacity-30 shadow rounded lg:w-1/3 md:w-1/2 w-full p-10 mt-12">
+                <div className="bg-onSurface bg-opacity-30 shadow rounded lg:w-1/3 md:w-1/2 w-full p-10 mt-12">
                     <p
                         tabIndex={0}
                         role="heading"
@@ -52,7 +52,7 @@ function Login() {
                         <button
                             role="button"
                             aria-label="login to Account"
-                            className="bg-primary bg-opacity-80 hover:bg-opacity-100 text-secondary text-sm font-semibold leading-none text-white focus:ring-2 focus:ring-offset-2 focus:ring-title_bg-700 focus:outline-none border-none rounded py-4 w-full"
+                            className="bg-primary bg-opacity-80 hover:bg-opacity-100 text-secondary text-sm font-semibold leading-none text-onSurface focus:ring-2 focus:ring-offset-2 focus:ring-title_bg-700 focus:outline-none border-none rounded py-4 w-full"
                         >
                             Login to Account
                         </button>

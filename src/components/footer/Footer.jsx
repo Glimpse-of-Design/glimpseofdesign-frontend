@@ -25,7 +25,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="flex lg:justify-center lg:items-center flex-col px-12 lg:bg-main pt-9 md:pt-12 xl:pt-20 pb-4 text-secondary border-t border-secondary mt-16">
+    <div className="flex lg:justify-center lg:items-center flex-col px-12 lg:bg-surface pt-9 md:pt-12 xl:pt-20 pb-4 text-onSurface border-t border-onSurface mt-16">
       {/* 4 x 4 grid to store footer items*/}
       <div className="grid grid-cols-1 lg:grid-cols-4 pb-12">
         {/* row 1 */}
@@ -89,12 +89,12 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaFacebookF className="text-secondary text-lg" />
+                <FaFacebookF className="text-onSurface hover:text-primary text-lg" />
               </a>
             </div>
             <div className="opacity-50 w-8 h-8 flex-shrink-0 bg-gray-800 cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
               <Link to="#">
-                <FaWhatsapp className="text-secondary text-lg" />
+                <FaWhatsapp className="text-onSurface hover:text-primary text-lg" />
               </Link>
             </div>
           </div>

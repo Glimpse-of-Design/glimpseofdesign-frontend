@@ -37,7 +37,7 @@ function Index() {
     <div className="flex flex-nowrap bg-secondary h-screen">
       {/* Sidebar starts */}
       {/* Remove class [ hidden ] and replace [ sm:flex ] with [ flex ] */}
-      <div className="bg-main text-input_txt w-64 absolute sm:relative bg-gray-800 shadow md:h-full flex-col justify-between hidden sm:flex">
+      <div className="bg-surface text-input_txt w-64 absolute sm:relative bg-gray-800 shadow md:h-full flex-col justify-between hidden sm:flex">
         <div className="px-8">
           <div className="h-16 w-full flex items-center">
             {/* Brand name */}
@@ -139,7 +139,7 @@ function Index() {
         >
           <BiSliderAlt className="text-lg" />
         </div>
-        <div className="px-8 bg-main text-input_txt">
+        <div className="px-8 bg-surface text-input_txt">
           <div className="h-16 w-full flex items-center">
             {/* Brand name */}
             <Link to="/">
@@ -334,7 +334,7 @@ function Index() {
                         You don't just want to be comfortable sitting in a bar
                         stool—you want to be comfortable shimmying it up to the
                         bar, closer to your lover, or back slightly to include a
-                        third person in the conversation.
+                        tertiary person in the conversation.
                       </p>
                       <div className="flex items-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 lg:space-x-8 mt-8 md:mt-16">
                         <button className="w-full md:w-2/4 border border-gray text-base font-medium leading-none text-white uppercase py-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 bg-gray-800 text-white">
@@ -376,7 +376,7 @@ function Index() {
                         You don't just want to be comfortable sitting in a bar
                         stool—you want to be comfortable shimmying it up to the
                         bar, closer to your lover, or back slightly to include a
-                        third person in the conversation.
+                        tertiary person in the conversation.
                       </p>
                       <div className="flex items-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 lg:space-x-8 mt-8 md:mt-16">
                         <button className="w-full md:w-2/4 border border-gray text-base font-medium leading-none text-white uppercase py-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 bg-gray-800 text-white">
@@ -418,7 +418,7 @@ function Index() {
                         You don't just want to be comfortable sitting in a bar
                         stool—you want to be comfortable shimmying it up to the
                         bar, closer to your lover, or back slightly to include a
-                        third person in the conversation.
+                        tertiary person in the conversation.
                       </p>
                       <div className="flex items-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 lg:space-x-8 mt-8 md:mt-16">
                         <button className="w-full md:w-2/4 border border-gray text-base font-medium leading-none text-white uppercase py-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 bg-gray-800 text-white">

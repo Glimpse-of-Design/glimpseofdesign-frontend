@@ -39,10 +39,10 @@ export default function AboutUs() {
       <div class="bg-gray-100">
         <div class="container m-auto px-6 py-20 md:px-12 lg:px-20">
           <div class="mt-12 grid items-center gap-6 md:grid-cols-2 lg:flex lg:space-x-8">
-            <div class="relative md:col-span-1 group lg:w-[32%] bg-secondary text-main rounded">
+            <div class="relative md:col-span-1 group lg:w-[32%] bg-secondary text-surface rounded">
               <div
                 aria-hidden="true"
-                class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"
+                class="absolute top-0 w-full h-full rounded-2xl bg-onSurface shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"
               ></div>
               <div class="relative">
                 <div className="bg-title_bg w-full p-6">
@@ -63,10 +63,10 @@ export default function AboutUs() {
               </div>
             </div>
 
-            <div class="relative row-start-1 group md:col-span-2 lg:w-[36%] bg-secondary text-main rounded">
+            <div class="relative row-start-1 group md:col-span-2 lg:w-[36%] bg-secondary text-surface rounded">
               <div
                 aria-hidden="true"
-                class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"
+                class="absolute top-0 w-full h-full rounded-2xl bg-onSurface shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"
               ></div>
               <div class="relative">
                 <div className="bg-primary w-full p-6">
@@ -93,10 +93,10 @@ export default function AboutUs() {
               </div>
             </div>
 
-            <div class="relative md:col-span-1 group lg:w-[32%] bg-secondary text-main rounded">
+            <div class="relative md:col-span-1 group lg:w-[32%] bg-secondary text-surface rounded">
               <div
                 aria-hidden="true"
-                class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"
+                class="absolute top-0 w-full h-full rounded-2xl bg-onSurface shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"
               ></div>
               <div class="relative">
                 <div className="bg-title_bg w-full p-6">

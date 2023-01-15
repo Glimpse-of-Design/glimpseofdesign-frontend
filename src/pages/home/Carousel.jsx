@@ -1,11 +1,9 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import image1 from "../../assets/Carousel/01.png";
-import image2 from "../../assets/Carousel/02.png";
-import image3 from "../../assets/Carousel/03.png";
-import image4 from "../../assets/Carousel/04.png";
-import image5 from "../../assets/Carousel/05.png";
-import image6 from "../../assets/Carousel/06.png";
+import image1 from "../../assets/Carousel/1.jpg";
+import image2 from "../../assets/Carousel/2.jpg";
+import image3 from "../../assets/Carousel/3.jpg";
+import image4 from "../../assets/Carousel/4.jpg";
 
 const responsive = {
   superLargeDesktop: {
@@ -40,12 +38,6 @@ function Carouselcontent() {
       </div>
       <div>
         <img alt="img4" src={image4} />
-      </div>
-      <div>
-        <img alt="img5" src={image5} />
-      </div>
-      <div>
-        <img alt="img6" src={image6} />
       </div>
     </Carousel>
   );

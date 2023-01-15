@@ -58,7 +58,7 @@ const AddProject = () => {
 
     return (
         <div>
-            <h1>Displaying Error Messages</h1>
+            <h1 className="hidden">Displaying Error Messages</h1>
             <Formik
                 initialValues={{
                     projectName: '',
@@ -95,8 +95,8 @@ const AddProject = () => {
                 {({errors, touched}) => (
                     <Form className="h-full w-full">
                         <div className="w-full flex items-center justify-center">
-                            <div className="my-24 bg-secondary bg-opacity-30 shadow rounded py-12 lg:px-28 px-8">
-                                <p className="text-secondary mb-8 md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">
+                            <div className="my-24 bg-tertiary bg-opacity-30 shadow rounded py-12 lg:px-28 px-8">
+                                <p className="text-onSurface mb-8 md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">
                                     Showcase your team's work!
                                 </p>
                                 <div>
@@ -167,7 +167,7 @@ const AddProject = () => {
                                                 <div className="flex text-sm text-gray-600">
                                                     <label
                                                         htmlFor="inputGroupFile04"
-                                                        className="relative cursor-pointer rounded-md bg-white font-medium text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500"
+                                                        className="relative cursor-pointer rounded-md bg-onSurface font-medium text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500"
                                                     >
                                                         {urls && <span>Upload a file</span>}
                                                         <input
@@ -211,7 +211,7 @@ const AddProject = () => {
                                     <div className="flex items-center justify-center w-full">
                                         <button
                                             type="submit"
-                                            className="bg-primary bg-opacity-80 hover:bg-opacity-100 text-secondary mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-main-700 rounded hover:bg-main-600 focus:ring-2 focus:ring-offset-2 focus:ring-main-700 focus:outline-none">
+                                            className="bg-primary bg-opacity-80 hover:bg-opacity-100 text-secondary mt-9 text-base font-semibold leading-none text-onSurface py-4 px-10 bg-surface-700 rounded hover:bg-surface-600 focus:ring-2 focus:ring-offset-2 focus:ring-surface-700 focus:outline-none">
                                             SUBMIT
                                         </button>
                                     </div>

@@ -41,9 +41,11 @@ const solutions = [
 
 export default function Navbar() {
     return (
-        <Popover className="absolute z-50 w-full bg-main opacity-80 text-secondary">
-            <div className="max-w-7xl">
-                <div className="flex justify-between items-center  border-third-100 md:justify-start md:space-x-10">
+        <Popover className="absolute w-full z-50 bg-surface opacity-80 text-secondary flex px-8">
+            <div className="w-1/12"></div>
+            <div className="w-10/12">
+            {/* max-w-7xl */}
+                <div className="flex justify-between items-center border-tertiary-100 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <Link to="/">
                             <img
@@ -55,7 +57,7 @@ export default function Navbar() {
                     </div>
                     <div className="mr-4 my-2 md:hidden">
                         <Popover.Button
-                            className="bg-main opacity-80 rounded-md p-2 inline-flex items-center justify-center text-third-400 hover:text-third-500 hover:bg-third-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500">
+                            className="bg-surface opacity-80 rounded-md p-2 inline-flex items-center justify-center text-tertiary-400 hover:text-tertiary-500 hover:bg-tertiary-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500">
                             <span className="sr-only mx-6">Open menu</span>
                             <MenuIcon className="h-6 w-6" aria-hidden="true"/>
                         </Popover.Button>
@@ -80,6 +82,7 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
+            <div className="w-1/12"></div>
 
             <Transition
                 as={Fragment}
@@ -94,7 +97,7 @@ export default function Navbar() {
                     focus
                     className="absolute flex justify-end top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden max-w-full"
                 >
-                    <div className="rounded-lg shadow-lg ring-1 ring-main ring-opacity-5 bg-secondary opacity-100">
+                    <div className="rounded-lg shadow-lg ring-1 ring-surface ring-opacity-5 bg-secondary opacity-100">
                         <div className="pt-2 pb-6 px-5">
                             <div className="flex items-center justify-between">
                                 <div>
@@ -104,9 +107,9 @@ export default function Navbar() {
                                         alt="Glimpse of Design"
                                     />
                                 </div>
-                                <div className="-mr-2 text-third">
+                                <div className="-mr-2 text-tertiary">
                                     <Popover.Button
-                                        className="bg-secondary rounded-md p-2 inline-flex items-center justify-center text-primary-400 hover:text-primary-500 hover:bg-third-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
+                                        className="bg-secondary rounded-md p-2 inline-flex items-center justify-center text-primary-400 hover:text-primary-500 hover:bg-tertiary-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
                                         <span className="sr-only">Close menu</span>
                                         <XIcon className="h-6 w-6" aria-hidden="true"/>
                                     </Popover.Button>
@@ -118,13 +121,13 @@ export default function Navbar() {
                                         <NavLink
                                             key={item.href}
                                             to={item.href}
-                                            className="-m-3 p-3 flex items-center rounded-md hover:bg-third-50 text-main navbar-color"
+                                            className="-m-3 p-3 flex items-center rounded-md hover:bg-tertiary-50 text-surface navbar-color"
                                         >
                                             <item.icon
                                                 className="flex-shrink-0 h-6 w-6 text-primary-600"
                                                 aria-hidden="true"
                                             />
-                                            <span className="ml-3 text-base font-medium text-third-900">
+                                            <span className="ml-3 text-base font-medium text-tertiary-900">
                         {item.name}
                       </span>
                                         </NavLink>
