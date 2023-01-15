@@ -36,7 +36,7 @@ export default function Index() {
               <p className="font-normal text-xl leading-6 text-secondary">
                 House interior in Athurugiriya
               </p>
-              <p className="font-light text-sm lg:text-xl leading-6 text-secondary">
+              <p className="font-light text-sm lg:text-sm leading-4 text-secondary">
                 Modern but elegant home that brings the luxurious atmosphere was
                 the clients main desire in their newly built home. The overall
                 colour pallete ws more specific than the typical colours used in
@@ -56,7 +56,7 @@ export default function Index() {
               <p className="font-normal text-xl leading-6 text-secondary">
                 Office interior at Ratmalana
               </p>
-              <p className="hidden md:block font-light text-sm lg:text-xl leading-6 text-secondary">
+              <p className="hidden md:block font-light text-sm lg:text-sm leading-4 text-secondary">
                 This was a design for a complete renovation of an existing
                 office are and to extend the office with the space of existing
                 neglected store space in the old factory of the client. The
@@ -78,7 +78,7 @@ export default function Index() {
               <p className="font-normal text-xl leading-6 text-secondary">
                 House in Thalawathugoda
               </p>
-              <p className="hidden md:block font-light text-sm lg:text-xl leading-6 text-secondary">
+              <p className="hidden md:block font-light text-sm lg:text-sm leading-4 text-secondary">
                 Timeless colour incorperation yet modern and minimalist yet
                 homey and lively interior was the clients' main desire.
                 {/* to
