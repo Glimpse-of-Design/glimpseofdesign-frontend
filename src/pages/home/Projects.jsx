@@ -28,11 +28,11 @@ export default function Index() {
             <img className="md:block w-full" src={image1} alt="Living Room" />
             <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />
             <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
-              <p className="font-semibold text-2xl leading-6 text-secondary uppercase">
+              <p className="font-semibold text-base lg:text-2xl leading-6 text-secondary uppercase whitespace-nowrap">
                 HOUSE OF GLAMOUR
               </p>
             </div>
-            <div className="flex flex-col top-20 left-8 mr-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
+            <div className="hidden lg:flex flex-col top-20 left-8 mr-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
               <p className="font-normal text-xl leading-6 text-secondary">
                 House interior in Athurugiriya
               </p>
@@ -48,11 +48,11 @@ export default function Index() {
             <img className="md:block w-full" src={image2} alt="Living Room" />
             <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />
             <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
-              <p className="font-semibold text-2xl leading-6 text-secondary uppercase">
+              <p className="font-semibold text-base lg:text-2xl leading-6 text-secondary uppercase whitespace-nowrap">
                 VARNA LIMITED
               </p>
             </div>
-            <div className="flex flex-col top-20 left-8 mr-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
+            <div className="hidden lg:flex flex-col top-20 left-8 mr-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
               <p className="font-normal text-xl leading-6 text-secondary">
                 Office interior at Ratmalana
               </p>
@@ -70,11 +70,11 @@ export default function Index() {
             <img className="md:block w-full" src={image3} alt="Living Room" />
             <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />
             <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-main group-hover:bg-opacity-50">
-              <p className="font-semibold text-2xl leading-6 text-secondary uppercase">
+              <p className="font-semibold text-base lg:text-2xl leading-6 text-secondary uppercase whitespace-nowrap">
                 TIMELESS HOME
               </p>
             </div>
-            <div className="flex flex-col top-20 left-8 mr-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
+            <div className="hidden lg:flex flex-col top-20 left-8 mr-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
               <p className="font-normal text-xl leading-6 text-secondary">
                 House in Thalawathugoda
               </p>

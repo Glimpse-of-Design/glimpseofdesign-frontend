@@ -16,38 +16,32 @@ const solutions = [
     {
         name: "Home",
         description: "Get a better understanding of what is provided.",
-        href: "#",
+        href: "/",
         icon: ChartBarIcon,
     },
     {
         name: "Projects",
         description: "Display what have been already done.",
-        href: "#",
+        href: "/projects",
         icon: CursorClickIcon,
-    },
-    {
-        name: "About Us",
-        description: "What we serve and who we are.",
-        href: "#",
-        icon: ShieldCheckIcon,
     },
     {
         name: "Services",
         description: "What we offer.",
-        href: "#",
+        href: "/services",
         icon: ViewGridIcon,
     },
     {
         name: "Contact Us",
         description: "Speak directly to the company",
-        href: "#",
+        href: "/contact",
         icon: RefreshIcon,
     },
 ];
 
 export default function Navbar() {
     return (
-        <Popover className="absolute z-10 w-full bg-main opacity-80 text-secondary">
+        <Popover className="absolute z-50 w-full bg-main opacity-80 text-secondary">
             <div className="max-w-7xl">
                 <div className="flex justify-between items-center  border-third-100 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -100,7 +94,7 @@ export default function Navbar() {
                     focus
                     className="absolute flex justify-end top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden max-w-full"
                 >
-                    <div className="rounded-lg shadow-lg ring-1 ring-main ring-opacity-5 bg-secondary">
+                    <div className="rounded-lg shadow-lg ring-1 ring-main ring-opacity-5 bg-secondary opacity-100">
                         <div className="pt-2 pb-6 px-5">
                             <div className="flex items-center justify-between">
                                 <div>
@@ -122,8 +116,8 @@ export default function Navbar() {
                                 <nav className="grid gap-y-8">
                                     {solutions.map((item) => (
                                         <NavLink
-                                            key={item.name}
-                                            to={item.name}
+                                            key={item.href}
+                                            to={item.href}
                                             className="-m-3 p-3 flex items-center rounded-md hover:bg-third-50 text-main navbar-color"
                                         >
                                             <item.icon

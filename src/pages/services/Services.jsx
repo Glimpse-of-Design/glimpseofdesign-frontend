@@ -31,10 +31,10 @@ export default function Index() {
               <h1 className="text-base sm:text-base lg:text-3xl font-semibold text-gray-800 sm:w-9/12 uppercase underline underline-offset-4">
                 Our services
               </h1>
-              <p className="text-base leading-normal text-gray-800 mt-4 sm:mt-5 sm:w-9/12">
+              {/* <p className="text-base leading-normal text-gray-800 mt-4 sm:mt-5 sm:w-9/12">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

@@ -34,7 +34,7 @@ const contact = () => {
                 Get in touch with us
               </p>
             </div> */}
-            <div className="absolute mx-4 sm:mx-auto w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 mt-60 sm:mt-30 md:mt-28 lg:mt-36">
+            <div className="absolute mx-4 sm:mx-auto w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 mt-20 sm:mt-30 md:mt-28 lg:mt-36">
               <div className="w-full h-8 mb-4 px-2">
                 <p className="font-semibold text-base sm:text-2xl leading-6 text-secondary text-center">
                   Get in touch with us
