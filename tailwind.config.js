@@ -9,7 +9,7 @@ module.exports = {
       primary: "#D9A527",
       secondary: "#ffffff",
       tertiary: "gray",
-      gray_text: "#b2b2b1", //#3e4750
+      gray_text: "#6D6E71", //#3e4750
       column_bg_1: "#D2C9C5",
       column_bg_2: "#91A2B4",
       title_bg: "#363636", 

@@ -31,8 +31,8 @@ export default function Index() {
               alt="House of glamour"
             />
             <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />
-            <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-gray_text group-hover:bg-opacity-60">
-              <p className="font-semibold text-base lg:text-2xl leading-6 text-secondary uppercase whitespace-nowrap">
+            <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-4 sm:p-8 group-hover:bg-gray_text group-hover:bg-opacity-60">
+              <p className="font-semibold text-xs sm:text-base lg:text-2xl leading-3 md:leading-6 text-secondary uppercase md:whitespace-nowrap">
                 HOUSE OF GLAMOUR
               </p>
             </div>
@@ -46,10 +46,10 @@ export default function Index() {
             </div>
           </div>
           <div className="relative group">
-            <img className="md:block w-full" src={image2} alt="Living Room" />
+            <img className="md:block w-full" src={image2} alt="TIMELESS HOME" />
             <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />
-            <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-gray_text group-hover:bg-opacity-40">
-              <p className="font-semibold text-base lg:text-2xl leading-6 text-secondary uppercase whitespace-nowrap">
+            <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-4 sm:p-8 group-hover:bg-gray_text group-hover:bg-opacity-60">
+              <p className="font-semibold text-xs sm:text-base lg:text-2xl leading-3 md:leading-6 text-secondary uppercase md:whitespace-nowrap">
                 TIMELESS HOME
               </p>
             </div>
@@ -63,10 +63,14 @@ export default function Index() {
             </div>
           </div>
           <div className="relative group">
-            <img className="md:block w-full" src={image3} alt="Living Room" />
+            <img
+              className="md:block w-full"
+              src={image3}
+              alt="Wood Toned House"
+            />
             <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />
-            <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-gray_text group-hover:bg-opacity-40">
-              <p className="font-semibold text-base lg:text-2xl leading-6 text-secondary uppercase whitespace-nowrap">
+            <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-4 sm:p-8 group-hover:bg-gray_text group-hover:bg-opacity-60">
+              <p className="font-semibold text-xs sm:text-base lg:text-2xl leading-3 md:leading-6 text-secondary uppercase md:whitespace-nowrap">
                 Wood Toned House
               </p>
             </div>

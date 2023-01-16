@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { db } from "../../apis/firebase/firebase-config";
 import { collection, getDocs } from "firebase/firestore";
-import { BsSearch } from "@react-icons/all-files/bs/BsSearch";
-import cover_img from "../../assets/Categories/02.jpg";
+import cover_img from "../../assets/Cover_images/projects.jpg";
 import image1 from "../../assets/Categories/01.jpg";
 
 const projectsCollectionRef = collection(db, "projects");
@@ -39,7 +38,7 @@ export default function Projects() {
               className="sm:hidden w-full h-full"
             />
 
-            <div className="absolute z-10 top-8 sm:top-20 lg:top-32 left-0 mx-0 sm:mx-0 mt-20 sm:mt-12 sm:py-4 py-4 px-4 md:py-8 lg:py-8 xl:py-8 sm:pl-14 flex flex-col sm:justify-start items-start bg-title_bg opacity-75 text-secondary w-96">
+            <div className="absolute z-10 top-8 sm:top-20 lg:top-32 left-0 mx-0 sm:mx-0 mt-20 sm:mt-12 sm:py-4 py-4 px-4 md:py-8 lg:py-8 xl:py-8 sm:pl-14 flex flex-col sm:justify-start items-start bg-title_bg opacity-75 text-secondary w-48 sm:w-96">
               <h1 className="text-base sm:text-base lg:text-3xl font-semibold text-gray-800 sm:w-9/12 uppercase underline underline-offset-4">
                 Portfolio
               </h1>
@@ -74,29 +73,6 @@ export default function Projects() {
                 </span>
               </div>
             </div>
-
-            {projects.length !== 0 &&
-              projects.map((project) => (
-                <div className="relative group" key={project.id}>
-                  {/* Project image dimensions set to height: 250px; width: 400px; */}
-                  <img
-                    className="w-[400px] h-[250px]"
-                    src={project.images[0].url || image1}
-                    alt="Living Room"
-                  />
-                  <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />
-                  <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-surface group-hover:bg-opacity-50">
-                    <p className="font-semibold text-2xl leading-6 text-secondary">
-                      {project.projectName}
-                    </p>
-                  </div>
-                  <div className="flex flex-col top-20 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
-                    <p className="font-light text-xl leading-6 text-secondary">
-                      {project.projectSummary}
-                    </p>
-                  </div>
-                </div>
-              ))}
 
             {/*<div className="relative group">*/}
             {/*  <img className="md:block w-full" src={image2} alt="Apartments" />*/}
@@ -145,6 +121,32 @@ export default function Projects() {
             {/*    </div>*/}
             {/*  </Link>*/}
             {/*</div>*/}
+          </div>
+        </div>
+        <div className="2xl:container flex justify-center items-center w-full 2xl:mx-auto lg:px-20 md:py-12 md:px-6 py-9 px-4">
+          <div className="w-80 md:w-auto grid lg:grid-cols-3 grid-cols-1 lg:gap-8 gap-6">
+            {projects.length !== 0 &&
+              projects.map((project) => (
+                <div className="relative group" key={project.id}>
+                  {/* Project image dimensions set to height: 250px; width: 400px; */}
+                  <img
+                    className="w-[400px] h-[250px]"
+                    src={project.images[0].url || image1}
+                    alt="Living Room"
+                  />
+                  <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />
+                  <div className="absolute top-0 left-0 w-full h-full flex justify-start items-start opacity-100 p-8 group-hover:bg-surface group-hover:bg-opacity-50">
+                    <p className="font-semibold text-2xl leading-6 text-secondary">
+                      {project.projectName}
+                    </p>
+                  </div>
+                  <div className="flex flex-col top-20 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    <p className="font-light text-xl leading-6 text-secondary">
+                      {project.projectSummary}
+                    </p>
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
       </div>

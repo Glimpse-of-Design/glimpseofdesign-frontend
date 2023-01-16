@@ -66,11 +66,12 @@ const contact = () => {
             Contact us
           </h1>
           <p className="text-gray-600 text-base text-center mt-4">
-            Need to get in touch with us? Either fill out the form with your
-            inquiry or find the contact details you'd like to contact below.
+            Need to get in touch with us? 
+            {/* Either fill out the form with your
+            inquiry or find the contact details you'd like to contact below. */}
           </p>
         </section>
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 pt-10 gap-8 divide-y md:divide-y-0 md:divide-x-2 text-onSurface">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 pt-10 text-onSurface">
           <div className="h-max p-8 flex flex-col justify-center items-center">
             <div className="bg-primary bg-opacity-80 h-20 w-20 mb-6 rounded-full flex justify-center items-center">
               <FaPhoneAlt className="text-2xl text-surface" />
@@ -78,13 +79,13 @@ const contact = () => {
             <p className="font-semibold text-xl text-primary">Phone:</p>
             <p>+94 71 7662323</p>
           </div>
-          <div className="h-max p-8 flex flex-col justify-center items-center">
+          {/* <div className="h-max p-8 flex flex-col justify-center items-center">
             <div className="bg-primary bg-opacity-80 h-20 w-20 mb-6 rounded-full flex justify-center items-center">
               <HiLocationMarker className="text-2xl text-surface" />
             </div>
             <p className="font-semibold text-xl text-primary">Address:</p>
-            <p>112/34/4, VIP Crescent, Bakmeegaha Road, Athurugiriya.</p>
-          </div>
+            <p className="text-center">112/34/4, VIP Crescent, Bakmeegaha Road, Athurugiriya.</p>
+          </div> */}
           <div className="h-max p-8 flex flex-col justify-center items-center">
             <div className="bg-primary bg-opacity-80 h-20 w-20 mb-6 rounded-full flex justify-center items-center">
               <MdEmail className="text-2xl text-surface" />

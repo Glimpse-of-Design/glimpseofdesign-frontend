@@ -38,4 +38,17 @@ li {
     .nav-selected {
         @apply bg-primary rounded-full px-6 py-2;
     }
+    .react-multiple-carousel__arrow {
+        position: absolute;
+        outline: 0;
+        transition: all .5s;
+        border-radius: 35px;
+        z-index: 10 !important;
+        border: 0;
+        background: rgba(0,0,0,0.1);
+        min-width: 43px;
+        min-height: 43px;
+        opacity: 0.2;
+        cursor: pointer;
+    }
 }
