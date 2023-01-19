@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.active {
+		background-color: #d9a527;
+		color: white;
+	}
+
+	.text-error {
+		color: red;
+	}
+	.carouselContainer{
+		margin: 0 auto;
+	}
+}
